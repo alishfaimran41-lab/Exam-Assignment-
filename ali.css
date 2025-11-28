@@ -1,0 +1,63 @@
+body{
+    background: #f0f0f0;
+     margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+nav a:hover{
+    background: #555;
+    border-radius: 5px;
+}
+.hero-section{
+    text-align: center;
+    padding: 2rem;
+}
+.hero img{
+    max-width: 100%;
+    height: auto;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 600px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a{
+        margin: 0.5em 0;
+    }
+}
+
+
+.hero-section img {
+    animation: zoomInOut 10s infinite;
+    width: 100%;
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
